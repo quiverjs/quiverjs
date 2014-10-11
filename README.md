@@ -31,6 +31,14 @@ export var hello = simpleHandler(
   'void', 'text')
 ```
 
+Here simple handler is a simplified component type.
+
+  - `args` is a plain object for storing parameterized input. (i.e. query string)
+  - Input type `void` means the handler ignore the input stream. (i.e. request body)
+  - Output type `text` means the handler returns a string. We use the word "text" to avoid overriding reserved methods like `.toString()`.
+
+Simple handler is not a http handler. But it can be used for handling HTTP requests or used in many other ways.
+
 ## Running Server
 
 [Traceur Compiler](https://github.com/google/traceur-compiler) is required to transpile ES6 code to ES5. In addition install `quiver-http` to use the helper `startServer()` function to start up a trivial HTTP server.
@@ -65,7 +73,7 @@ All official Quiver libraries are transpiled and exported as ES5 code. You may w
 
 ## Wiki
 
-Check out the [wiki](wiki) for more detailed documentation.
+Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed documentation.
 
 
 ## Contributors
