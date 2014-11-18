@@ -7,10 +7,10 @@ Quiver is a middleware-based [Node](http://nodejs.org/) framework for writing mo
 
 Quiver provides the following features:
 
-  - [Stream Channel](wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](http://nodejs.org/api/stream.html)
-  - Easy to use [Middleware architecture](Architecture-Overview#filter), generalized for usage in both HTTP and application logic
-  - [Dependency management](wiki/Architecture-Overview#builder) solution to localize all configuration
-  - Declarative [Component System](wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
+  - [Stream Channel](https://github.com/quiverjs/doc/wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](http://nodejs.org/api/stream.html)
+  - Easy to use [Middleware architecture](https://github.com/quiverjs/doc/wiki/Architecture-Overview#filter), generalized for usage in both HTTP and application logic
+  - [Dependency management](https://github.com/quiverjs/doc/wiki/Architecture-Overview#builder) solution to localize all configuration
+  - Declarative [Component System](https://github.com/quiverjs/doc/wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
 
 Quiver also make full use of the latest ES6 features:
 
@@ -21,7 +21,7 @@ Quiver also make full use of the latest ES6 features:
     top of promises
   - ES6 Modules and Class syntax
 
-Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented on top as [Quiver components](wiki/Core-Components).
+Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented on top as [Quiver components](https://github.com/quiverjs/doc/wiki/Core-Components).
 
 ## Installation
 
