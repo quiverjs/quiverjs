@@ -12,8 +12,6 @@ Quiver provides the following features:
   - [Dependency management](wiki/Architecture-Overview#builder) solution to localize all configuration
   - Declarative [Component System](wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
 
-Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented as [Quiver components](wiki/Core-Components).
-
 Quiver also make full use of the latest ES6 features:
 
   - ES6 compiled to ES5 using
@@ -22,6 +20,8 @@ Quiver also make full use of the latest ES6 features:
   - [Generator support](https://github.com/lukehoban/ecmascript-asyncawait) on
     top of promises
   - ES6 Modules and Class syntax
+
+Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented on top as [Quiver components](wiki/Core-Components).
 
 ## Installation
 
