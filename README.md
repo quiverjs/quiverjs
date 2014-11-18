@@ -1,7 +1,7 @@
 Quiver.js
 =========
 
-Quiver is a new web framework for writing modular applications declaratively.
+Quiver is a middleware-based framework for writing modular applications declaratively.
 
 Quiver is written on [Node.js](http://nodejs.org/) using the latest ES6
 features:
@@ -12,6 +12,17 @@ features:
   - [Generator support](https://github.com/lukehoban/ecmascript-asyncawait) on
     top of promises
   - ES6 Modules and Class syntax
+
+## Features
+
+Quiver provides the following features:
+
+  - [Stream Channel](wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](http://nodejs.org/api/stream.html)
+  - Easy to use [Middleware architecture](Architecture-Overview#filter), generalized for usage in both HTTP and application logic
+  - [Dependency management](wiki/Architecture-Overview#builder) solution to localize all configuration
+  - Declarative [Component System](wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
+
+Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented as [Quiver components](wiki/Core-Components).
 
 ## Installation
 
