@@ -100,6 +100,12 @@ You will find out how much cleaner it is to code in Quiver because of ES6!
 Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
 documentation.
 
+## Community
+
+Quiver is just starting to build its community. Be the first to join the Quiver community!
+
+  - [Google Groups](https://groups.google.com/d/forum/quiverjs)
+  - [SubReddit](http://www.reddit.com/r/quiverjs/)
 
 ## Contributors
 
