@@ -105,7 +105,6 @@ documentation.
 Quiver is just starting to build its community. Be the first to join the Quiver community!
 
   - [Google Groups](https://groups.google.com/d/forum/quiverjs)
-  - [SubReddit](http://www.reddit.com/r/quiverjs/)
 
 ## Contributors
 
