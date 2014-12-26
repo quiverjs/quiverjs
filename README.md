@@ -100,6 +100,18 @@ You will find out how much cleaner it is to code in Quiver because of ES6!
 Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
 documentation.
 
+## Demo/Tutorial
+
+  - [Demo 01](https://github.com/quiverjs/quiver-demo-01) - This is the first demo to demonstrate how to build simple components in Quiver.js. In this demo, we are going to build a simple HTTP server that greets a user based on the URL path.
+
+## Status
+
+Quiver is currently still in beta development. Right now the [component system](wiki/Component-System) and [core libraries](wiki/Core-Libraries) are almost done and usable right away. However the base architecture is about the same low level as Node. So to build web application in Quiver you still need to write all application code from scratch.
+
+The [core components](wiki/Core-Components) are currently being developed to provide essential web application features such as caching and authentication. With the core components finished, Quiver will be more framework-like with most common features ready out of the box.
+
+It is your chance to contribute right now by writing common quiver components to build up the Quiver ecosystem.
+
 ## Community
 
 Quiver is just starting to build its community. Be the first to join the Quiver community!
@@ -110,7 +122,7 @@ Quiver is just starting to build its community. Be the first to join the Quiver 
 
 Author: [Soares Chen](https://github.com/soareschen)
 
-Contributions, feedback, and pull requests welcome!
+Contributions, feedback, and pull requests welcome. Please [contact me](mailto:soares.chen@gmail.com) if you have tried Quiver in any way or is interested on helping the project.
 
 
 ## License
