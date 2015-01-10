@@ -23,16 +23,6 @@ Quiver also make full use of the latest ES6 features:
 
 Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented on top as [Quiver components](https://github.com/quiverjs/doc/wiki/Core-Components).
 
-## Installation
-
-Quiver is made of many small and loosely coupled libraries. To use Quiver, you
-need to at least install the `quiver-component` package to define and export
-custom components.
-
-```bash
-$ npm install quiver-component
-```
-
 ## Wiki
 
 Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
@@ -45,6 +35,14 @@ documentation.
 ## Presentation
 
   - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
+
+## Installation
+
+Quiver is made of many small and loosely coupled libraries. The [`quiver-core`](https://github.com/quiverjs/doc/wiki/Core) package provides the core libraries to create custom components in Quiver.
+
+```bash
+$ npm install quiver-core
+```
 
 ## Component
 
