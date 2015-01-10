@@ -23,8 +23,6 @@ Quiver also make full use of the latest ES6 features:
     top of promises
   - ES6 Modules and Class syntax
 
-Quiver is NOT an MVC framework. The core Quiver component system is a generic framework to organize web application code. Common application functionalities such as static files and authentication are implemented on top as [Quiver components](https://github.com/quiverjs/doc/wiki/Core-Components).
-
 ## Wiki
 
 Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
