@@ -51,7 +51,7 @@ simple hello world handler component:
 
 ```javascript
 /* hello.js */
-import { simpleHandler } from 'quiver-component'
+import { simpleHandler } from 'quiver-core/component'
 
 export var hello = simpleHandler(
   args => 'Hello World',
@@ -73,12 +73,12 @@ requests or used in many other ways.
 ## Running Server
 
 [Traceur Compiler](https://github.com/google/traceur-compiler) is required to
-transpile ES6 code to ES5. In addition install `quiver-http` to use the helper
-`startServer()` function to start up a trivial HTTP server.
+transpile ES6 code to ES5. In addition use the helper
+`startServer()` function in `quiver-core/http` to start up a trivial HTTP server.
 
 ```javascript
 /* server.js */
-import { startServer } from 'quiver-http'
+import { startServer } from 'quiver-core/http'
 import { hello } form './hello.js'
 
 // placeholder empty config
