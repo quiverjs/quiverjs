@@ -1,7 +1,7 @@
 Quiver.js
 =========
 
-Quiver is a middleware-based [Node](http://nodejs.org/) framework for writing modular applications declaratively.
+Quiver is a middleware-based component framework for developing modular [Node.js](http://nodejs.org/) applications.
 
 ## Features
 
