@@ -3,14 +3,16 @@ Quiver.js
 
 Quiver is a middleware-based component framework for developing modular [Node.js](http://nodejs.org/) applications.
 
-## Features
+## Architecture
 
-Quiver provides the following features:
+Quiver is made of many layers of [achitecture constructs](https://github.com/quiverjs/doc/wiki/Architecture-Constructs) that include:
 
   - [Stream Channel](https://github.com/quiverjs/doc/wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](http://nodejs.org/api/stream.html)
   - Easy to use [Middleware architecture](https://github.com/quiverjs/doc/wiki/Architecture-Overview#filter), generalized for usage in both HTTP and application logic
   - [Dependency management](https://github.com/quiverjs/doc/wiki/Architecture-Overview#builder) solution to localize all configuration
   - Declarative [Component System](https://github.com/quiverjs/doc/wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
+
+## ES6
 
 Quiver also make full use of the latest ES6 features:
 
@@ -97,12 +99,6 @@ startServer(hello, config)
 $ npm install -g traceur
 $ traceur server.js
 ```
-
-## Quiver in ES5
-
-All official Quiver libraries are transpiled and exported as ES5 code. You may
-write Quiver applications in ES5, but it is much more beneficial to code in ES6.
-You will find out how much cleaner it is to code in Quiver because of ES6!
 
 ## Status
 
