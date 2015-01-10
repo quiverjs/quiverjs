@@ -95,7 +95,6 @@ startServer(hello, config)
 
 ```bash
 $ npm install -g traceur
-$ npm install quiver-http
 $ traceur server.js
 ```
 
