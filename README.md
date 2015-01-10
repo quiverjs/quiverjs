@@ -33,6 +33,19 @@ custom components.
 $ npm install quiver-component
 ```
 
+## Wiki
+
+Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
+documentation.
+
+## Demo/Tutorial
+
+  - [Demo 01](https://github.com/quiverjs/quiver-demo-01) - This is the first demo to demonstrate how to build simple components in Quiver.js. In this demo, we are going to build a simple HTTP server that greets a user based on the URL path.
+
+## Presentation
+
+  - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
+
 ## Component
 
 Code in Quiver is organized as many small and reusable components. Here is a
@@ -93,16 +106,6 @@ $ traceur server.js
 All official Quiver libraries are transpiled and exported as ES5 code. You may
 write Quiver applications in ES5, but it is much more beneficial to code in ES6.
 You will find out how much cleaner it is to code in Quiver because of ES6!
-
-
-## Wiki
-
-Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
-documentation.
-
-## Demo/Tutorial
-
-  - [Demo 01](https://github.com/quiverjs/quiver-demo-01) - This is the first demo to demonstrate how to build simple components in Quiver.js. In this demo, we are going to build a simple HTTP server that greets a user based on the URL path.
 
 ## Status
 
