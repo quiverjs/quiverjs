@@ -18,10 +18,10 @@ Quiver makes full use of the latest ES6 features:
 
   - ES6 compiled to ES5 using
     [Traceur Compiler](https://github.com/google/traceur-compiler)
-  - [Promise](https://www.promisejs.org/) based async control flow
-  - [Generator support](https://github.com/lukehoban/ecmascript-asyncawait) on
+  - [Promise](http://www.2ality.com/2014/09/es6-promises-foundations.html) based async control flow
+  - [Generator support](https://github.com/quiverjs/quiverjs/wiki/Promises#async) on
     top of promises
-  - ES6 Modules and Class syntax
+  - ES6 [Modules](http://www.2ality.com/2014/09/es6-modules-final.html) and Class syntax
 
 ## Wiki
 
