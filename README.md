@@ -1,7 +1,7 @@
 Quiver.js
 =========
 
-Quiver is a component framework for creating composable and easy to use [Node.js](http://nodejs.org/) applications.
+Quiver is a component framework for creating composable and easy to maintain [Node.js](http://nodejs.org/) applications.
 
 ## Architecture
 
