@@ -113,11 +113,9 @@ Quiver is currently still in beta development. Right now the [component system](
 
 The [core components](wiki/Core-Components) are currently being developed to provide essential web application features such as caching and authentication. With the core components finished, Quiver will be more framework-like with most common features ready out of the box.
 
-It is your chance to contribute right now by writing common quiver components to build up the Quiver ecosystem.
-
 ## Community
 
-Quiver is just starting to build its community. Be the first to join the Quiver community!
+Quiver is just starting to build its community, starting with an empty Google Groups.
 
   - [Google Groups](https://groups.google.com/d/forum/quiverjs)
 
