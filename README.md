@@ -5,7 +5,7 @@ Quiver is a component framework for creating composable and easy to maintain [No
 
 ## Architecture
 
-Quiver is made of many layers of [achitecture constructs](https://github.com/quiverjs/doc/wiki/Architecture-Constructs) that include:
+Quiver is made of many layers of [architecture constructs](https://github.com/quiverjs/doc/wiki/Architecture-Constructs) that include:
 
   - [Stream Channel](https://github.com/quiverjs/doc/wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](http://nodejs.org/api/stream.html)
   - Easy to use [Middleware architecture](https://github.com/quiverjs/doc/wiki/Architecture-Overview#filter), generalized for usage in both HTTP and application logic
