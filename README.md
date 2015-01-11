@@ -1,7 +1,7 @@
 Quiver.js
 =========
 
-Quiver is a middleware-based component framework for developing modular [Node.js](http://nodejs.org/) applications.
+Quiver is a component framework for creating composable and easy to use [Node.js](http://nodejs.org/) applications.
 
 ## Architecture
 
@@ -14,7 +14,7 @@ Quiver is made of many layers of [achitecture constructs](https://github.com/qui
 
 ## ES6
 
-Quiver also make full use of the latest ES6 features:
+Quiver makes full use of the latest ES6 features:
 
   - ES6 compiled to ES5 using
     [Traceur Compiler](https://github.com/google/traceur-compiler)
@@ -36,13 +36,15 @@ documentation.
 
   - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
 
-## Installation
+## Getting Started
 
 Quiver is made of many small and loosely coupled libraries. The [`quiver-core`](https://github.com/quiverjs/doc/wiki/Core) package provides the core libraries to create custom components in Quiver.
 
 ```bash
 $ npm install quiver-core
 ```
+
+A [boilerplate repository](https://github.com/quiverjs/quiver-boilerplate) is provided to help you quickly start developing Quiver applications. Simply [clone the repository](https://github.com/quiverjs/quiver-boilerplate) and start modifying the code base.
 
 ## Component
 
@@ -97,6 +99,8 @@ startServer(hello, config)
 $ npm install -g traceur
 $ traceur server.js
 ```
+
+The [build system](https://github.com/quiverjs/quiverjs/wiki/Build-System) documentation provides more details on running ES6 code on Node.
 
 ## Status
 
