@@ -23,24 +23,6 @@ Quiver makes full use of the latest ES6 features:
     top of promises
   - ES6 [Modules](http://www.2ality.com/2014/09/es6-modules-final.html) and Class syntax
 
-## Wiki
-
-Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
-documentation.
-
-## Demo/Tutorial
-
-  - [Demo 01](https://github.com/quiverjs/quiver-demo-01) - This is the first demo to demonstrate how to build simple components in Quiver.js. In this demo, we are going to build a simple HTTP server that greets a user based on the URL path.
-
-## Presentation
-
-  - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
-  - CampJS 2014 - [Quiver.js: A New Server-side Component Architecture](https://www.youtube.com/watch?v=jfaF52FBxEg) ([Slides](http://quiverjs.github.io/slides-01)) (This presentation was based on an older version of Quiver)
-
-## Thesis
-
-A [bachelor thesis](https://github.com/quiverjs/thesis) has been written on the architecture design of Quiver. It was based on an older version of Quiver.
-
 ## Getting Started
 
 Quiver is made of many small and loosely coupled libraries. The [`quiver-core`](https://github.com/quiverjs/doc/wiki/Core) package provides the core libraries to create custom components in Quiver.
@@ -106,6 +88,24 @@ $ traceur server.js
 ```
 
 The [build system](https://github.com/quiverjs/quiverjs/wiki/Build-System) documentation provides more details on running ES6 code on Node.
+
+## Wiki
+
+Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
+documentation.
+
+## Demo/Tutorial
+
+  - [Demo 01](https://github.com/quiverjs/quiver-demo-01) - This is the first demo to demonstrate how to build simple components in Quiver.js. In this demo, we are going to build a simple HTTP server that greets a user based on the URL path.
+
+## Presentation
+
+  - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
+  - CampJS 2014 - [Quiver.js: A New Server-side Component Architecture](https://www.youtube.com/watch?v=jfaF52FBxEg) ([Slides](http://quiverjs.github.io/slides-01)) (This presentation was based on an older version of Quiver)
+
+## Thesis
+
+A [bachelor thesis](https://github.com/quiverjs/thesis) has been written on the architecture design of Quiver. It was based on an older version of Quiver.
 
 ## Status
 
