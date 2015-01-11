@@ -35,7 +35,7 @@ documentation.
 ## Presentation
 
   - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
-  - CampJS 2014 - [Quiver.js: A New Server-side Component Architecture](https://www.youtube.com/watch?v=jfaF52FBxEg) (This presentation was based on an older version of Quiver)
+  - CampJS 2014 - [Quiver.js: A New Server-side Component Architecture](https://www.youtube.com/watch?v=jfaF52FBxEg) ([Slides](http://quiverjs.github.io/slides-01)) (This presentation was based on an older version of Quiver)
 
 ## Thesis
 
