@@ -68,7 +68,7 @@ transpile ES6 code to ES5. In addition use the helper
 ```javascript
 /* server.js */
 import { startServer } from 'quiver-core/http'
-import { hello } form './hello.js'
+import { hello } from './hello.js'
 
 // placeholder empty config
 var config = { }
