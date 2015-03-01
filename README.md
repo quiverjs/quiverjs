@@ -1,22 +1,23 @@
 Quiver.js
 =========
 
-Quiver is a component framework for creating composable and easy to maintain [Node.js](http://nodejs.org/) applications.
+Quiver is a component framework for creating composable and easy to maintain [io.js](https://iojs.org/) applications.
 
 ## Architecture
 
 Quiver is made of many layers of [architecture constructs](https://github.com/quiverjs/doc/wiki/Architecture-Constructs) that include:
 
-  - [Stream Channel](https://github.com/quiverjs/doc/wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](http://nodejs.org/api/stream.html)
+  - [Stream Channel](https://github.com/quiverjs/doc/wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](https://iojs.org/api/stream.html)
   - Easy to use [Middleware architecture](https://github.com/quiverjs/doc/wiki/Architecture-Overview#filter), generalized for usage in both HTTP and application logic
   - [Dependency management](https://github.com/quiverjs/doc/wiki/Architecture-Overview#builder) solution to localize all configuration
   - Declarative [Component System](https://github.com/quiverjs/doc/wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
 
-## ES6
+## io.js and ES6
 
-Quiver makes full use of the latest ES6 features:
+Quiver runs exclusively on [io.js](https://iojs.org/) and it's source code is written in ES6.
 
-  - ES6 compiled to ES5 using
+  - Make use of [natively supported](https://iojs.org/en/es6.html) ES6 features by io.js. Including `let` binding, Symbols, and Map.
+  - Unsupported ES6 features by io.js are transpiled using
     [Traceur Compiler](https://github.com/google/traceur-compiler)
   - [Promise](http://www.2ality.com/2014/09/es6-promises-foundations.html) based async control flow
   - [Generator support](https://github.com/quiverjs/quiverjs/wiki/Promises#async) on
@@ -87,7 +88,7 @@ $ npm install -g traceur
 $ traceur server.js
 ```
 
-The [build system](https://github.com/quiverjs/quiverjs/wiki/Build-System) documentation provides more details on running ES6 code on Node.
+The [build system](https://github.com/quiverjs/quiverjs/wiki/Build-System) documentation provides more details on running ES6 code on io.js.
 
 ## Wiki
 
