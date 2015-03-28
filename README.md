@@ -26,10 +26,10 @@ Quiver runs exclusively on [io.js](https://iojs.org/) and it's source code is wr
 
 ## Getting Started
 
-Quiver is made of many small and loosely coupled libraries. The [`quiver-core`](https://github.com/quiverjs/doc/wiki/Core) package provides the core libraries to create custom components in Quiver.
+Quiver is made of many small and loosely coupled libraries. The [`quiver`](https://github.com/quiverjs/doc/wiki/Core) package provides the core libraries to create custom components in Quiver.
 
 ```bash
-$ npm install quiver-core
+$ npm install quiver
 ```
 
 A [boilerplate repository](https://github.com/quiverjs/quiver-boilerplate) is provided to help you quickly start developing Quiver applications. Simply [clone the repository](https://github.com/quiverjs/quiver-boilerplate) and start modifying the code base.
@@ -41,7 +41,7 @@ simple hello world handler component:
 
 ```javascript
 /* hello.js */
-import { simpleHandler } from 'quiver-core/component'
+import { simpleHandler } from 'quiver/component'
 
 export var hello = simpleHandler(
   args => 'Hello World',
@@ -64,11 +64,11 @@ requests or used in many other ways.
 
 [Traceur Compiler](https://github.com/google/traceur-compiler) is required to
 transpile ES6 code to ES5. In addition use the helper
-`startServer()` function in `quiver-core/http` to start up a trivial HTTP server.
+`startServer()` function in `quiver/http` to start up a trivial HTTP server.
 
 ```javascript
 /* server.js */
-import { startServer } from 'quiver-core/http'
+import { startServer } from 'quiver/http'
 import { hello } from './hello.js'
 
 // placeholder empty config
