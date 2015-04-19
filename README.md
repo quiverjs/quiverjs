@@ -1,6 +1,8 @@
 Quiver.js
 =========
 
+[![Join the chat at https://gitter.im/quiverjs/quiverjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/quiverjs/quiverjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Quiver is a component framework for creating composable and easy to maintain [io.js](https://iojs.org/) applications.
 
 ## Architecture
