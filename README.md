@@ -7,17 +7,17 @@ Quiver.js is an experimental JavaScript framework for building web applications 
 
 Quiver have many features that are different from traditional web frameworks. In particular:
 
-  - **Composabile Components** - Quiver components are small snippets of code that can easily be reused and composed into larger applications.
+  - **Composabile Components** - Quiver components are small snippets of plain functions that can easily be reused and composed into larger applications.
 
   - **Functional Programming** - Quiver makes use of many advanced functional programming concepts borrowed from Haskell. As a result Quiver code base is simpler, cleaner, composable, and more maintainable.
 
   - **Plain JavaScript** - Despite being type-heavy and functional, Quiver is written in plain JavaScript. This allows easy integration with existing JavaScript libraries and ecosystem. Quiver makes use the latest ES2016+ standard and harness the power of JavaScript, such as prototypal programming and iterators.
 
-  - **CSP Channel** - Quiver data streams are implemented as CSP-like (Communicating Sequential Process) channels. This simplifies the channel implementation and decouple the channel implementation from raw data sources. Quiver also introduce the concept of streamable object to allow optimization when transferring data between raw sources and sinks.
+  - **CSP Channel** - Quiver data streams are implemented as CSP-like (Communicating Sequential Process) channels. This simplifies the channel implementation and decouple it from raw data sources/sinks. Quiver also introduce the concept of streamable object to allow optimization when transferring data between raw sources and sinks.
 
-  - **Standard Input/Output** - For back end API components, Quiver specifies a Unix-process-like interface with an argument map, input read stream, and returning result stream.
+  - **Standard Input/Output Streams** - For back end API components, Quiver specifies a Unix-process-like interface with an argument map, input read stream, and returning result stream.
 
-  - **Combinator Pattern** - Quiver makes use of the combinator pattern in Haskell to compose components. As a result Quiver code looks like EDSL (Embedded DSL) rather than regular JavaScript.
+  - **Combinator Pattern** - Quiver makes use of the combinator pattern in Haskell to compose components. As a result Quiver code looks like EDSL (Embedded Domain Specific Language) rather than regular JavaScript.
 
   - **Functional Reactive Programming (FRP)** - For front end UI components, Quiver provides an FRP-like signal construct and virtual DOM to map between the change in application state and resulting layout.
 
@@ -41,7 +41,7 @@ Quiver have many features that are different from traditional web frameworks. In
 
   - _Is there any documentation?_
 
-  Some documentation were written few years back. Since then I have acquired more knowledge in functional programming and made many changes to Quiver. No documentation is planned until the new version of Quiver is done. But I am more than happy to explain in detail if anyone is interested.
+  Some documentation were written few years back. Since then I have acquired more knowledge in functional programming and made many major changes to Quiver. No documentation is planned until the new version of Quiver is done. But I am more than happy to explain in detail if anyone is interested.
 
   - _Should I try out Quiver myself?_
 
@@ -63,7 +63,7 @@ Quiver have many features that are different from traditional web frameworks. In
 
   - _Why not other functional JavaScript frameworks?_
 
-  Current functional JavaScript frameworks are relatively weak as compared to full fledged functional programming in Haskell. Other than that, Quiver aims specifically on web development and provide high level constructs integrated across many domains.
+  Current functional JavaScript frameworks are relatively weak as compared to full fledged functional programming in Haskell. Quiver not only use basic FP concepts like map reduce, but also more advanced concepts such as monad and combinator. Other than that, Quiver aims specifically on web development and provide high level constructs integrated across many domains.
 
   - _Why is Quiver written in JavaScript? I love functional programming but JavaScript sucks_
 
@@ -71,13 +71,14 @@ Quiver have many features that are different from traditional web frameworks. In
 
   - _Why not TypeScript / ClojureScript / PureScript / Elm / other transpile-to-JS languages?_
 
-  Same reason as above. Additionally, I like static type system but I want the power of full fledged type systems like Haskell, which not many language provide. But writing Quiver in JS also enables choice. Users of Quiver can choose to write their application in JS, or any of their favorite language that transpiled to JS.
+  Same reason as above. Additionally, I like static type system but I want the power of full fledged type systems like Haskell, which not many language provide. But writing Quiver in JS also enables choice. Users of Quiver can choose to write their application either in JS, or any of their favorite language that transpiled to JS.
 
   - _I am not convinced. JavaScript is the worst language ever._
 
   I am sorry to hear that. But perhaps do you think so because you still know it as the EcmaScript 3 language specified in 1999? Do check out the ES2016+ standard out there. JavaScript has evolved a long way since then.
 
-  Note that this is also the biggest challenge for Quiver.js to gain adoption. The target audience tend to be either hard core Haskell/Scala functional programmer or imperative JavaScript programmer. The intersection between these two sets is virtually non-existent.
+  You may see how this is a big challenge for Quiver.js to gain adoption. The target audience tend to be either hard core Haskell/Scala functional programmer or imperative JavaScript programmer. The intersection between these two sets is virtually non-existent.
+
 
 ## Contribution
 
