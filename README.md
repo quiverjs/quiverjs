@@ -1,119 +1,84 @@
 Quiver.js
 =========
 
-[![Join the chat at https://gitter.im/quiverjs/quiverjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/quiverjs/quiverjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Quiver.js is an experimental JavaScript framework for building web applications using functional programming paradigms. It provides an EDSL to define components with plain functions, which are then composed together and get “compiled” into running application.
 
-Quiver is a component framework for creating composable and easy to maintain [io.js](https://iojs.org/) applications.
+## Features
 
-## Architecture
+Quiver have many features that are different from traditional web frameworks. In particular:
 
-Quiver is made of many layers of [architecture constructs](https://github.com/quiverjs/doc/wiki/Architecture-Constructs) that include:
+  - **Composabile Components** - Quiver components are small snippets of code that can easily be reused and composed into larger applications.
 
-  - [Stream Channel](https://github.com/quiverjs/doc/wiki/Architecture-Overview#stream-channel) design based on [Communication Sequential Process](http://en.wikipedia.org/wiki/Communicating_sequential_processes) to replace [Node stream](https://iojs.org/api/stream.html)
-  - Easy to use [Middleware architecture](https://github.com/quiverjs/doc/wiki/Architecture-Overview#filter), generalized for usage in both HTTP and application logic
-  - [Dependency management](https://github.com/quiverjs/doc/wiki/Architecture-Overview#builder) solution to localize all configuration
-  - Declarative [Component System](https://github.com/quiverjs/doc/wiki/Component-System) to organize functions into reusable components that can then be combined declaratively.
+  - **Functional Programming** - Quiver makes use of many advanced functional programming concepts borrowed from Haskell. As a result Quiver code base is simpler, cleaner, composable, and more maintainable.
 
-## io.js and ES6
+  - **Plain JavaScript** - Despite being type-heavy and functional, Quiver is written in plain JavaScript. This allows easy integration with existing JavaScript libraries and ecosystem. Quiver makes use the latest ES2016+ standard and harness the power of JavaScript, such as prototypal programming and iterators.
 
-Quiver runs exclusively on [io.js](https://iojs.org/) and it's source code is written in ES6.
+  - **CSP Channel** - Quiver data streams are implemented as CSP-like (Communicating Sequential Process) channels. This simplifies the channel implementation and decouple the channel implementation from raw data sources. Quiver also introduce the concept of streamable object to allow optimization when transferring data between raw sources and sinks.
 
-  - Make use of [natively supported](https://iojs.org/en/es6.html) ES6 features by io.js. Including `let` binding, Symbols, and Map.
-  - Unsupported ES6 features by io.js are transpiled using
-    [Traceur Compiler](https://github.com/google/traceur-compiler)
-  - [Promise](http://www.2ality.com/2014/09/es6-promises-foundations.html) based async control flow
-  - [Generator support](https://github.com/quiverjs/quiverjs/wiki/Promises#async) on
-    top of promises
-  - ES6 [Modules](http://www.2ality.com/2014/09/es6-modules-final.html) and Class syntax
+  - **Standard Input/Output** - For back end API components, Quiver specifies a Unix-process-like interface with an argument map, input read stream, and returning result stream.
 
-## Getting Started
+  - **Combinator Pattern** - Quiver makes use of the combinator pattern in Haskell to compose components. As a result Quiver code looks like EDSL (Embedded DSL) rather than regular JavaScript.
 
-Quiver is made of many small and loosely coupled libraries. The [`quiver`](https://github.com/quiverjs/doc/wiki/Core) package provides the core libraries to create custom components in Quiver.
+  - **Functional Reactive Programming (FRP)** - For front end UI components, Quiver provides an FRP-like signal construct and virtual DOM to map between the change in application state and resulting layout.
 
-```bash
-$ npm install quiver
-```
+  - **Type System** - To manage advanced type concepts in JavaScript, Quiver implements a Haskell-like type system in JavaScript. The type system similar to GHC Core language without type inference. It is based on System F and supports type class and parametric polymorphism. Work is being done to also implement dependent type into the system.
 
-A [boilerplate repository](https://github.com/quiverjs/quiver-boilerplate) is provided to help you quickly start developing Quiver applications. Simply [clone the repository](https://github.com/quiverjs/quiver-boilerplate) and start modifying the code base.
+## Status
 
-## Component
+  - Quiver is a solo work by Soares Chen started in 2013 and is still in active development.
 
-Code in Quiver is organized as many small and reusable components. Here is a
-simple hello world handler component:
+  - The back end implementation of Quiver is stable but not battle tested. A major rewrite of the back end is planned once the Quiver type system is fully implemented.
 
-```javascript
-/* hello.js */
-import { simpleHandler } from 'quiver/component'
+  - The front end implementation is proof of concept. FRP signal works but the dynamic typed nature of JavaScript makes it very error prone to use.
 
-export var hello = simpleHandler(
-  args => 'Hello World',
-  'void', 'text')
-```
+  - Most work is currently being done on implementing a type system in JavaScript. Without that it is hard to make use of more advanced concepts borrowed from Haskell.
 
-Here `simpleHandler` is a simplified component type.
+## FAQ
 
-  - `args` is a plain object for storing parameterized input. (i.e. query
-    string)
-  - Input type `void` means the handler ignores the input stream. (i.e. request
-    body)
-  - Output type `text` means the handler returns a string. We use the word
-    "text" to avoid overriding reserved methods like `.toString()`.
+  - _Who are you and why should I trust you?_
 
-`simpleHandler` is not a HTTP handler. But it can be used for handling HTTP
-requests or used in many other ways.
+  I am just a developer who is very passionate in programming language and web development. I think today's web applications are made of big mess of monolithic and imperative code, and functional programming is the way to fix this. It is not easy to fix, but I try hard to make a difference.
 
-## Running Server
+  - _Is there any documentation?_
 
-[Traceur Compiler](https://github.com/google/traceur-compiler) is required to
-transpile ES6 code to ES5. In addition use the helper
-`startServer()` function in `quiver/http` to start up a trivial HTTP server.
+  Some documentation were written few years back. Since then I have acquired more knowledge in functional programming and made many changes to Quiver. No documentation is planned until the new version of Quiver is done. But I am more than happy to explain in detail if anyone is interested.
 
-```javascript
-/* server.js */
-import { startServer } from 'quiver/http'
-import { hello } from './hello.js'
+  - _Should I try out Quiver myself?_
 
-// placeholder empty config
-var config = { }
+  Only yes if you are adventurous and are into functional programming. I'll not attempt to convince you on why you should use functional programming. But if you are interested, check out [Eric Elliott's posts](https://medium.com/javascript-scene/the-rise-and-fall-and-rise-of-functional-programming-composable-software-c2d91b424c8c) on functional programming in JavaScript.
 
-startServer(hello, config)
-.then(server => {
-  console.log('Demo server running at port 8080...')
-})
-.catch(err => {
-  console.log('error starting server:', err)
-})
-```
+  - _Should I use Quiver in production for my company?_
 
-```bash
-$ npm install -g traceur
-$ traceur server.js
-```
+  Almost certainly no, because: 1) It is experimental, 2) Only one person work on it, 3) It is radically different from regular JavaScript.
 
-The [build system](https://github.com/quiverjs/quiverjs/wiki/Build-System) documentation provides more details on running ES6 code on io.js.
+  You should only consider Quiver if: 1) Your company is large enough to afford experimentation and risk, 2) Your team of front end / back end developers are proficient in functional programming, 3) You are the team leader, trust me enough, and want to hire me to be part of the team.
 
-## Wiki
+  - _When will Quiver be ready for use?_
 
-Check out the [wiki](https://github.com/quiverjs/doc/wiki) for more detailed
-documentation.
+  Not for another few years time. I can only work on Quiver on my personal time because it is too much risk to let a company depend on a framework only one person know, only to leave the company few years later. It also takes time because I am still learning advanced programming language theory topics such as dependent type to be added to Quiver.
 
-## Demo/Tutorial
+  - _Is Quiver better than other web frameworks?_
 
-  - [Demo 01](https://github.com/quiverjs/quiver-demo-01) - This is the first demo to demonstrate how to build simple components in Quiver.js. In this demo, we are going to build a simple HTTP server that greets a user based on the URL path.
+  Technically, yes. Popularity wise, no. Functional programming is a double edged sword in that it is technically superior but is never likely to gain mainstream adoption. The learning curve is steep and not everyone will find Quiver easy to use.
 
-## Presentation
+  - _Why not other functional JavaScript frameworks?_
 
-  - JSConf.Asia 2014 - [Quiver.js: Rethinking Web Frameworks](https://www.youtube.com/watch?v=Lr-cARL3JXc) ([Slides](http://quiverjs.github.io/jsconfasia-2014))
-  - CampJS 2014 - [Quiver.js: A New Server-side Component Architecture](https://www.youtube.com/watch?v=jfaF52FBxEg) ([Slides](http://quiverjs.github.io/slides-01)) (This presentation was based on an older version of Quiver)
+  Current functional JavaScript frameworks are relatively weak as compared to full fledged functional programming in Haskell. Other than that, Quiver aims specifically on web development and provide high level constructs integrated across many domains.
+
+  - _Why is Quiver written in JavaScript? I love functional programming but JavaScript sucks_
+
+  Because _I_ love JavaScript, and I love functional programming too. I think JavaScript is an ugly duckling that deserve more love. Moreover the web ecosystem is overwhelmingly powered by JavaScript. A framework following closely to JavaScript semantics allows easier integration with existing JavaScript ecosystem.
+
+  - _Why not TypeScript / ClojureScript / PureScript / Elm / other transpile-to-JS languages?_
+
+  Same reason as above. Additionally, I like static type system but I want the power of full fledged type systems like Haskell, which not many language provide. But writing Quiver in JS also enables choice. Users of Quiver can choose to write their application in JS, or any of their favorite language that transpiled to JS.
+
+  - _I am not convinced. JavaScript is the worst language ever._
+
+  I am sorry to hear that. But perhaps do you think so because you still know it as the EcmaScript 3 language specified in 1999? Do check out the ES2016+ standard out there. JavaScript has evolved a long way since then.
+
+  Note that this is also the biggest challenge for Quiver.js to gain adoption. The target audience tend to be either hard core Haskell/Scala functional programmer or imperative JavaScript programmer. The intersection between these two sets is virtually non-existent.
 
 ## Contribution
 
-Quiver is still in its early stage. You can contribute to Quiver by working on the [issues](https://github.com/issues?q=user%3Aquiverjs+state%3Aopen) and writing your own quiver components.
-
-Right now the [component system](wiki/Component-System) and [core libraries](wiki/Core-Libraries) are almost done and usable right away. However the base architecture is about the same low level as Node. So to build web application in Quiver you still need to write all application code from scratch.
-
-The [core components](wiki/Core-Components) are currently being developed to provide essential web application features such as caching and authentication. With the core components finished, Quiver will be more framework-like with most common features ready out of the box.
-
-## License
-
-[MIT](https://raw.githubusercontent.com/quiverjs/license/master/LICENSE)
+If you are one of the few persons in this world who likes JavaScript, Haskell, web development, and functional programming, I'd very appreciate if you [drop me a simple message](mailto:soares.chen@gmail.com) saying you like this project.
