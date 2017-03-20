@@ -35,13 +35,9 @@ Quiver have many features that are different from traditional web frameworks. In
 
 ## FAQ
 
-  - _Who are you and why should I trust you?_
-
-  I am just a developer who is very passionate in programming language and web development. I think today's web applications are made of big mess of monolithic and imperative code, and functional programming is the way to fix this. It is not easy to fix, but I try hard to make a difference.
-
   - _Is there any documentation?_
 
-  Some documentation were written few years back. Since then I have acquired more knowledge in functional programming and made many major changes to Quiver. No documentation is planned until the new version of Quiver is done. But I am more than happy to explain in detail if anyone is interested.
+  [Some documentation](https://github.com/quiverjs/quiver-demo-01) were written few years back. Since then I have acquired more knowledge in functional programming and made many major changes to Quiver. No documentation is planned until the new version of Quiver is done. But I am more than happy to explain in detail if anyone is interested.
 
   - _Should I try out Quiver myself?_
 
@@ -63,7 +59,7 @@ Quiver have many features that are different from traditional web frameworks. In
 
   - _Why not other functional JavaScript frameworks?_
 
-  Current functional JavaScript frameworks are relatively weak as compared to full fledged functional programming in Haskell. Quiver not only use basic FP concepts like map reduce, but also more advanced concepts such as monad and combinator. Other than that, Quiver aims specifically on web development and provide high level constructs integrated across many domains.
+  Current functional JavaScript frameworks are relatively weak as compared to full fledged functional programming in Haskell. Quiver not only use basic FP concepts like map reduce, but also more advanced concepts such as algebraic data type, parametric polymorphism, type class, type kind, and dependent type. Other than that, Quiver aims specifically on web development and provide high level constructs integrated across many domains.
 
   - _Why is Quiver written in JavaScript? I love functional programming but JavaScript sucks_
 
