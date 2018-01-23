@@ -7,25 +7,25 @@ Quiver.js is an experimental JavaScript framework for building web applications 
 
 Quiver have many features that are different from traditional web frameworks. In particular:
 
-  - **Composabile Components** - Quiver components are small snippets of plain functions that can easily be reused and composed into larger applications.
+  - [**Composabile Components**](https://github.com/quiverjs/quiver-component) - Quiver components are small snippets of plain functions that can easily be reused and composed into larger applications.
 
   - **Functional Programming** - Quiver makes use of many advanced functional programming concepts borrowed from Haskell. As a result Quiver code base is simpler, cleaner, composable, and more maintainable.
 
   - **Plain JavaScript** - Despite being type-heavy and functional, Quiver is written in plain JavaScript. This allows easy integration with existing JavaScript libraries and ecosystem. Quiver makes use the latest ES2016+ standard and harness the power of JavaScript, such as prototypal programming and iterators.
 
-  - **CSP Channel** - Quiver data streams are implemented as CSP-like (Communicating Sequential Process) channels. This simplifies the channel implementation and decouple it from raw data sources/sinks. Quiver also introduce the concept of streamable object to allow optimization when transferring data between raw sources and sinks.
+  - [**CSP Channel**](https://github.com/quiverjs/quiver-stream-channel) - Quiver data streams are implemented as CSP-like (Communicating Sequential Process) channels. This simplifies the channel implementation and decouple it from raw data sources/sinks. Quiver also introduce the concept of streamable object to allow optimization when transferring data between raw sources and sinks.
 
-  - **Standard Input/Output Streams** - For back end API components, Quiver specifies a Unix-process-like interface with an argument map, input read stream, and returning result stream.
+  - [**Standard Input/Output Streams**](https://github.com/quiverjs/quiver-stream-util) - For back end API components, Quiver specifies a Unix-process-like interface with an argument map, input read stream, and returning result stream.
 
   - **Combinator Pattern** - Quiver makes use of the combinator pattern in Haskell to compose components. As a result Quiver code looks like EDSL (Embedded Domain Specific Language) rather than regular JavaScript.
 
-  - **Functional Reactive Programming (FRP)** - For front end UI components, Quiver provides an FRP-like signal construct and virtual DOM to map between the change in application state and resulting layout.
+  - [**Functional Reactive Programming (FRP)**](https://github.com/quiverjs/quiver-view) - For front end UI components, Quiver provides an FRP-like signal construct and virtual DOM to map between the change in application state and resulting layout.
 
-  - **Type System** - To manage advanced type concepts in JavaScript, Quiver implements a Haskell-like type system in JavaScript. The type system similar to GHC Core language without type inference. It is based on System F and supports type class and parametric polymorphism. Work is being done to also implement dependent type into the system.
+  - [**Type System**](https://github.com/quiverjs/quiver-type) - To manage advanced type concepts in JavaScript, Quiver implements a Haskell-like type system in JavaScript. The type system similar to GHC Core language without type inference. It is based on System F and supports type class and parametric polymorphism. Work is being done to also implement dependent type into the system.
 
 ## Status
 
-  - Quiver is a solo work by Soares Chen started in 2013 and is still in active development.
+  - Quiver is a solo work by Soares Chen started in 2013 and is currently still in development.
 
   - The back end implementation of Quiver is stable but not battle tested. A major rewrite of the back end is planned once the Quiver type system is fully implemented.
 
