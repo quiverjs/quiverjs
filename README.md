@@ -37,7 +37,7 @@ Quiver have many features that are different from traditional web frameworks. In
 
   - _Is there any documentation?_
 
-  [Some documentation](https://github.com/quiverjs/quiver-demo-01) were written few years back. Since then I have acquired more knowledge in functional programming and made many major changes to Quiver. No documentation is planned until the new version of Quiver is done. But I am more than happy to explain in detail if anyone is interested.
+  [Some documentation](https://github.com/quiverjs/quiver-demo-01) were written few years back. Since then I have acquired more knowledge in functional programming and made many major changes to Quiver. No documentation is planned until the new version of Quiver is done.
 
   - _Should I try out Quiver myself?_
 
@@ -47,15 +47,13 @@ Quiver have many features that are different from traditional web frameworks. In
 
   Almost certainly no, because: 1) It is experimental, 2) Only one person work on it, 3) It is radically different from regular JavaScript.
 
-  You should only consider Quiver if: 1) Your company is large enough to afford experimentation and risk, 2) Your team of front end / back end developers are proficient in functional programming, 3) You are the team leader, trust me enough, and want to hire me to be part of the team.
-
   - _When will Quiver be ready for use?_
 
-  Not for another few years time. I can only work on Quiver on my personal time because it is too much risk to let a company depend on a framework only one person know, only to leave the company few years later. It also takes time because I am still learning advanced programming language theory topics such as dependent type to be added to Quiver.
+  Not for another few years time. I can only work on Quiver on my personal time because it is too much risk to let a company depend on a framework only one person know, only to leave the company few years later. It also takes time because I am learning to build a [custom type system](https://github.com/quiverjs/quiver-type) to enable type safe composition for Quiver.
 
   - _Is Quiver better than other web frameworks?_
 
-  Technically, yes. Popularity wise, no. Functional programming is a double edged sword in that it is technically superior but is never likely to gain mainstream adoption. The learning curve is steep and not everyone will find Quiver easy to use.
+  Technically, yes. Popularity wise, no. Functional programming is a double edged sword in that it is technically superior but is unlikely to gain mainstream adoption. The learning curve is steep and not everyone will find Quiver easy to use.
 
   - _Why not other functional JavaScript frameworks?_
 
@@ -68,14 +66,3 @@ Quiver have many features that are different from traditional web frameworks. In
   - _Why not TypeScript / ClojureScript / PureScript / Elm / other transpile-to-JS languages?_
 
   Same reason as above. Additionally, I like static type system but I want the power of full fledged type systems like Haskell, which not many language provide. But writing Quiver in JS also enables choice. Users of Quiver can choose to write their application either in JS, or any of their favorite language that transpiled to JS.
-
-  - _I am not convinced. JavaScript is the worst language ever._
-
-  I am sorry to hear that. But perhaps do you think so because you still know it as the EcmaScript 3 language specified in 1999? Do check out the ES2016+ standard out there. JavaScript has evolved a long way since then.
-
-  You may see how this is a big challenge for Quiver.js to gain adoption. The target audience tend to be either hard core Haskell/Scala functional programmer or imperative JavaScript programmer. The intersection between these two sets is virtually non-existent.
-
-
-## Contribution
-
-If you are one of the few persons in this world who likes JavaScript, Haskell, web development, and functional programming, I'd very appreciate if you [drop me a simple message](mailto:soares.chen@gmail.com) saying you like this project.
